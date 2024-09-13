@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: student09
+      POSTGRES_PASSWORD: mF2gT0pO6bV4wJ5m
+      POSTGRES_DB: postgres
+    ports:
+      - "54321:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./initdb:/docker-entrypoint-initdb.d
+    restart: always
+
+volumes:
+  postgres_data:
