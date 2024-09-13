@@ -6,7 +6,7 @@ ALTER TABLE IF EXISTS student09.tracks
     ADD COLUMN IF NOT EXISTS artist_id      BIGINT,
     ADD COLUMN IF NOT EXISTS title          VARCHAR(255),
     ADD COLUMN IF NOT EXISTS release_year   INT,
-    ADD COLUMN IF NOT EXISTS duration       INTERVAL,
+    ADD COLUMN IF NOT EXISTS duration       INT,
     ADD COLUMN IF NOT EXISTS play_count     INT DEFAULT 0;
 
 COMMENT ON TABLE  student09.tracks                  IS 'Таблица с треками';
@@ -15,7 +15,7 @@ COMMENT ON COLUMN student09.tracks.album_id         IS 'Идентификато
 COMMENT ON COLUMN student09.tracks.artist_id        IS 'Идентификатор исполнителя';
 COMMENT ON COLUMN student09.tracks.title            IS 'Название трека';
 COMMENT ON COLUMN student09.tracks.release_year     IS 'Год выпуска трека';
-COMMENT ON COLUMN student09.tracks.duration         IS 'Продолжительность трека';
+COMMENT ON COLUMN student09.tracks.duration         IS 'Продолжительность трека в секундах';
 COMMENT ON COLUMN student09.tracks.play_count       IS 'Количество прослушиваний трека';
 
 DO '
