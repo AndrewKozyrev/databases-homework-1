@@ -13,6 +13,8 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./initdb:/docker-entrypoint-initdb.d
+      # Mount the directory containing your SQL files to /scripts in the container
+      - ./task1:/scripts
     restart: always
 
 volumes:
