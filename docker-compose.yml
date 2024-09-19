@@ -14,8 +14,8 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./initdb:/docker-entrypoint-initdb.d
       # Mount both task1 and task2 directories
-      - ./task1:/scripts/task1
-      - ./task2:/scripts/task2
+      - ./homework_1/task1:/scripts/task1
+      - ./homework_1/task2:/scripts/task2
     restart: always
 
 volumes:
