@@ -10,7 +10,7 @@ SET SQL_FILES=tb_customers.sql tb_books.sql tb_orders.sql tb_payments.sql fill_t
 :: Loop through each SQL file and execute it
 FOR %%f IN (%SQL_FILES%) DO (
     echo Executing %%f ...
-    docker exec -i %CONTAINER_NAME% psql -U %DB_USER% -d %DB_NAME% -f /scripts/task2/%%f
+    docker exec -i %CONTAINER_NAME% psql -U %DB_USER% -d %DB_NAME% -f /scripts/task_2/%%f
     IF ERRORLEVEL 1 (
         echo Error occurred while executing %%f.
         EXIT /B 1
