@@ -1,0 +1,78 @@
+-- Вставка данных в таблицу authors
+INSERT INTO student09.authors (author_name)
+VALUES
+    ('George Orwell'),
+    ('J.K. Rowling'),
+    ('J.R.R. Tolkien'),
+    ('Agatha Christie'),
+    ('Ernest Hemingway'),
+    ('F. Scott Fitzgerald'),
+    ('Stephen King'),
+    ('Jane Austen'),
+    ('Mark Twain'),
+    ('Charles Dickens');
+
+-- Вставка данных в таблицу genres
+INSERT INTO student09.genres (genre_name)
+VALUES
+    ('Fiction'),
+    ('Non-Fiction'),
+    ('Fantasy'),
+    ('Science Fiction'),
+    ('Mystery'),
+    ('Thriller'),
+    ('Romance'),
+    ('Historical Fiction'),
+    ('Horror'),
+    ('Biography');
+
+-- Вставка данных в таблицу books
+INSERT INTO student09.books (title, author_id, publication_year, pages_count, genre_id, download_count)
+VALUES
+    ('The Great Gatsby', 6, 1925, 218, 10, 2500),
+    ('1984', 1, 1949, 328, 3, 15000),
+    ('Harry Potter and the Philosopher`s Stone', 2, 1997, 223, 3, 5000),
+    ('The Hobbit', 3, 1937, 310, 3, 8000),
+    ('Murder on the Orient Express', 4, 1934, 256, 5, 1200),
+    ('The Old Man and the Sea', 5, 1952, 127, 6, 3000),
+    ('Pride and Prejudice', 8, 1813, 432, 7, 500),
+    ('Brave New World', 1, 1932, 311, 3, 7000),
+    ('The Catcher in the Rye', 5, 1951, 277, 6, 2000),
+    ('To Kill a Mockingbird', 5, 1960, 281, 7, 8500),
+    ('The Shining', 7, 1977, 447, 6, 20000),
+    ('The Chronicles of Narnia', 3, 1950, 768, 3, 9000),
+    ('The Picture of Dorian Gray', 9, 1890, 224, 8, 1200),
+    ('The Alchemist', 10, 1988, 208, 2, 18000),
+    ('Gone with the Wind', 10, 1936, 1037, 7, 600),
+    ('The Kite Runner', 10, 2003, 371, 2, 11000),
+    ('The Da Vinci Code', 10, 2003, 489, 5, 7500),
+    ('The Fault in Our Stars', 10, 2012, 313, 7, 6500),
+    ('Dune', 10, 1965, 412, 3, 5000),
+    ('War and Peace', 10, 1869, 1225, 7, 400),
+    ('A Tale of Two Cities', 9, 1859, 489, 8, 3200),
+    ('The Hitchhiker`s Guide to the Galaxy', 10, 1979, 224, 3, 9200),
+    ('The Hunger Games', 2, 2008, 374, 3, 15000),
+    ('Fahrenheit 451', 1, 1953, 158, 3, 800),
+    ('The Road', 10, 2006, 287, 6, 4500),
+    ('The Giver', 10, 1993, 180, 6, 7200),
+    ('The Road', 10, 2006, 287, 6, 4500),
+    ('Little Women', 10, 1868, 486, 7, 1100),
+    ('The Color Purple', 10, 1982, 295, 7, 3000),
+    ('The Glass Castle', 10, 2005, 288, 2, 6000),
+    ('The Secret Garden', 10, 1911, 331, 7, 2500),
+    ('Wuthering Heights', 10, 1847, 400, 8, 4000),
+    ('Emma', 8, 1815, 474, 7, 3000),
+    ('The Bell Jar', 10, 1963, 244, 6, 1500),
+    ('Dracula', 10, 1897, 418, 8, 800),
+    ('The Godfather', 10, 1969, 448, 2, 9200),
+    ('The Lovely Bones', 10, 2002, 328, 5, 4000),
+    ('A Game of Thrones', 3, 1996, 694, 3, 13000),
+    ('The Time Traveler`s Wife', 10, 2003, 546, 3, 8000),
+    ('Neverwhere', 10, 1996, 368, 3, 4200),
+    ('A Brief History of Time', 10, 1988, 256, 4, 3200),
+    ('Life of Pi', 10, 2001, 319, 2, 7000),
+    ('The Road', 10, 2006, 287, 6, 4500),
+    ('The Perks of Being a Wallflower', 10, 1999, 213, 5, 6000),
+    ('The Princess Bride', 10, 1973, 399, 6, 5500),
+    ('Water for Elephants', 10, 2006, 347, 7, 3000),
+    ('The Night Circus', 10, 2011, 387, 3, 4300);
